@@ -1,8 +1,92 @@
-.head header{
-    width:100%;
-    height:80vh;
-    background-image: url(../assets/Cement-Readymix-1.jpg);
+.head {
+    width: 100%;
+    height: 100vh;
+}
+
+.head header {
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), /* Gradient overlay */
+        url(../assets/Cement-Readymix-1.jpg); /* Replace with your image URL */
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px; /* Ensure some padding for smaller screens */
+}
+
+header .content {
+    width: 70%; /* Default width */
+    color: white;
+    text-align: center;
+}
+
+header .content h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+header .content h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+header .content .navlink {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    background-color: #bf9004;
+    padding: 12px 40px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .content .navlink:hover {
+    background-color: inherit;
+    border: solid 2px #bf9004;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    header .content {
+        width: 90%; /* Adjusted for smaller screens */
+    }
+
+    header .content h1 {
+        font-size: 40px;
+    }
+
+    header .content h3 {
+        font-size: 18px;
+    }
+
+    header .content .navlink {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
     
+    header .content h1 {
+        font-size: 30px;
+    }
+
+    header .content h3 {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    header .content .navlink {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
 }

@@ -1,0 +1,96 @@
+.about {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    margin-top: 5%;
+  }
+  
+  .about .title {
+    text-align: center;
+    color: #bf9004;
+    border-bottom: solid 5px #bf9004;
+    line-height: 40px;
+    width: 20%;
+    border-width: 16%;
+    padding-bottom: 10px;
+    margin: auto;
+    font-size: 50px;
+  }
+  
+  .aboutcontiner {
+    display: grid;
+    grid-template-columns: 40% 50%;
+    padding-top: 40px;
+    gap: 5%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .aboutdiscrip {
+    width: 100%;
+    padding-top: 110px;
+  }
+  
+  .aboutdiscrip h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
+  }
+  
+  .aboutdiscrip p {
+    text-align: right;
+    font-size: 26px;
+    line-height: 40px;
+    margin-top: 10px;
+  }
+  
+  .aboutcontiner img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+  }
+  
+  /* Media Query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .about .title {
+      width: 50%;
+      font-size: 36px;
+    }
+  
+    .aboutcontiner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .aboutdiscrip {
+      padding-top: 20px;
+      text-align: center;
+    }
+  
+    .aboutdiscrip p {
+      font-size: 18px;
+      line-height: 30px;
+      padding: 0 10px;
+    }
+  
+    .aboutcontiner img {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  }
+  
+  /* Media Query for very small screens */
+  @media screen and (max-width: 480px) {
+    body .about .title {
+      font-size: 30px;
+      width: 50%;
+    }
+
+    .aboutdiscrip p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+  

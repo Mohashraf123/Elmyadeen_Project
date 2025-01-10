@@ -1,0 +1,165 @@
+.footer {
+    margin-top: 5%;
+    width: 100%;
+    height: auto; /* Adjusted for responsive height */
+    padding-bottom: 20px;
+    background-image: 
+        linear-gradient(135deg, rgba(166, 166, 166, 0.5), rgba(166, 166, 166, 0.8)), 
+        url(../assets/footer.avif); /* Replace with your image URL */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer .footercontainer {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.contact, .sociallinks, .pages {
+    width: 100%;
+   
+}
+
+.contact h2, .pages h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #BF9004;
+}
+
+.contact ul {
+    padding: 0;
+    list-style: none;
+    margin-right:50px ;
+}
+.contact ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+    justify-content: right;
+    margin-block: 10px;
+}
+.contact ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact ul li a:hover h3 {
+    color: #BF9004;
+}
+.contact ul li span {
+    background-color: #BF9004;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.contact ul li h3 {
+    color: white;
+    font-size: 18px;
+}
+.sociallinks .footLogo{
+    text-align: center;
+}
+.sociallinks .footLogo img {
+    width: 100%;
+    max-width: 400px;
+}
+.sociallinks .footLogo h3 {
+    color: white;
+    font-size: 26px;
+}
+.sociallinks ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.sociallinks ul li a {
+    color: white;
+    background-color: #BF9004;
+    border-radius: 50%;
+    font-size: 24px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pages ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+.pages ul li {
+    margin-block: 20px;
+}
+.pages ul li .Link {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+.pages ul li .Link:hover {
+    color: #BF9004;
+}
+.copyright {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .contact h2, .pages h2 {
+        font-size: 28px;
+    }
+    .contact ul li h3 {
+        font-size: 16px;
+    }
+    .sociallinks .footLogo h3 {
+        font-size: 20px;
+    }
+    .sociallinks ul li a {
+        font-size: 18px;
+    }
+    .pages ul li .Link {
+        font-size: 18px;
+    }
+    .footer .contact ul{  
+        margin-right:30%;
+    }
+    .sociallinks .footLogo{
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer .footercontainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer .contact ul{
+        
+        margin-right:20%;
+    }
+    .sociallinks .footLogo{
+        text-align: center;
+    }
+    .sociallinks .footLogo img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .sociallinks .footLogo h3 {
+        font-size: 18px;
+    }
+    .copyright {
+        font-size: 14px;
+    }
+}

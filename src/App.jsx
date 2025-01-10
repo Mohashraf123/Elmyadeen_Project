@@ -5,6 +5,7 @@ import ProductsPage from './pages/ProductsPage'
 import Projects from './pages/Projects'
 import Contactus from './pages/ContactUs'
 import Root from './pages/Root'
+import { AnimatePresence, motion } from 'framer-motion';
 
 
 
@@ -17,6 +18,8 @@ const router=createBrowserRouter([
     {path:'contactus',element:<Contactus/>},    
   ])},
 ])
+
+
 
 function App() {
 
