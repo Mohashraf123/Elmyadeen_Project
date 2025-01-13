@@ -1,0 +1,68 @@
+.vecs{
+    margin-top:5%;
+}
+
+.vecs .container{
+    width:100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,45%); /* 2-column grid */
+    padding-top: 30px;
+    margin: auto;
+    gap:20px;
+    justify-content: center;
+}
+
+.vecs .container .vec{
+    width: 100%;
+    height: 60vh; /* Adjustable for better aspect ratio */
+    border: solid 2px #A6A6A6;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 0;
+    box-shadow: 2px 2px 8px 1px;
+}
+
+.vecs .container .vec:hover{
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+.vecs .container .vec img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Media Query for tablets and small devices */
+@media (max-width: 1024px) {
+    .vecs .container {
+        grid-template-columns: repeat(2, 45%); /* Adjust columns to 2 */
+    }
+
+    .vecs .container .vec {
+        height: 50vh; /* Adjust height for better display on smaller screens */
+    }
+}
+
+/* Media Query for smaller mobile devices (portrait orientation) */
+@media (max-width: 768px) {
+    .vecs .container {
+        grid-template-columns:90%; /* Single column for mobile */
+    }
+
+    .vecs .container .vec {
+        height: 45vh; /* Adjust image height for better use of space */
+    }
+}
+
+/* Media Query for very small devices or portrait on phones */
+@media (max-width: 480px) {
+    .vecs .container {
+        grid-template-columns: 90%; /* Ensuring single-column layout for small phones */
+        gap: 15px; /* Smaller gap between images */
+    }
+
+    .vecs .container .vec {
+        height: 40vh; /* Ensure height scales well */
+    }
+}

@@ -1,0 +1,154 @@
+.Contact {
+    margin-top: 2%;
+}
+
+.Contact .contact-container {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 50% 40%;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+}
+
+.Contact .contact-details h2 {
+    text-align: center;
+    color: #BF9004;
+    font-size: 40px;
+}
+
+.Contact .contact-details ul {
+    padding: 0;
+    list-style: none;
+    margin-right: 0px;
+}
+
+.Contact .contact-details ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+    justify-content: flex-end;
+    margin-block: 30px;
+}
+
+.Contact .contact-details ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #504c4cc4;
+    font-size: 18px;
+}
+
+.Contact .contact-details ul li a:hover h3 {
+    color: #BF9004;
+}
+
+.Contact .contact-details ul li span {
+    background-color: #BF9004;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.Contact .contact-details ul ul li h3 {
+    color: white;
+    font-size: 18px;
+}
+
+.Contact .map iframe {
+    width: 100%;
+    height: 70vh;
+}
+
+/* Responsive Design */
+
+/* For small screens (320px - 575px) */
+@media (max-width: 575px) {
+    .Contact .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .Contact .contact-details ul {
+        margin-right: 0;
+        text-align: right;
+    }
+
+    .Contact .contact-details ul li {
+        text-align: right; /* Ensure text is right-aligned */
+        justify-content: flex-end; /* Align flex items to the right */
+    }
+
+    .Contact .map iframe {
+        height: 50vh;
+    }
+}
+
+/* Medium Screens (576px - 768px) */
+@media (max-width: 768px) and (min-width: 576px) {
+    .Contact .contact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .Contact .contact-details ul {
+        margin-right: 0;
+        text-align: right;
+    }
+
+    .Contact .contact-details ul li {
+        text-align: right; /* Right-align text */
+        justify-content: flex-end; /* Align items to the right */
+    }
+
+    .Contact .map iframe {
+        height: 60vh;
+    }
+}
+
+/* Large Screens (769px - 1199px) */
+@media (max-width: 1199px) and (min-width: 769px) {
+    .Contact .contact-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Contact .contact-details ul {
+        margin-right: 20px; /* Add some spacing for larger screens */
+        text-align: right;
+    }
+
+    .Contact .contact-details ul li {
+        text-align: right;
+        justify-content: flex-end;
+    }
+
+    .Contact .contact-details h2 {
+        font-size: 35px;
+    }
+
+    .Contact .map iframe {
+        height: 65vh;
+    }
+}
+
+/* Extra Large Screens (1200px and Above) */
+@media (min-width: 1200px) {
+    .Contact .contact-container {
+        grid-template-columns: 50% 40%;
+    }
+
+    .Contact .contact-details ul {
+        margin-right: 50px; /* Ensure consistent alignment */
+        text-align: right;
+    }
+
+    .Contact .contact-details ul li {
+        text-align: right;
+        justify-content: flex-end;
+    }
+
+    .Contact .contact-details h2 {
+        font-size: 40px;
+    }
+}

@@ -3,9 +3,10 @@ import { motion } from 'framer-motion'; // For animations on load
 import AOS from 'aos'; // For scroll animations
 import 'aos/dist/aos.css'; // Import AOS styles
 import Header from '../components/Header';
-import AboutProduc from '../components/aboutproduc';
 import Importers from '../components/Importers';
-import AboutProjects from '../components/AboutProjects';
+
+import ProjectsMenu from '../components/ProjectsMenu';
+import Vicheles from '../components/Vicheles';
 
 export default function Projects() {
   useEffect(() => {
@@ -24,11 +25,11 @@ export default function Projects() {
     
     {/* AOS for scroll-based animations */}
     <div data-aos="fade-right">
-    <AboutProjects />
+    <ProjectsMenu/>
     </div>
     
     <div data-aos="zoom-in">
-      <Importers />
+      <Vicheles/>
     </div>
   </div>
   )

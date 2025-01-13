@@ -1,10 +1,12 @@
 import * as React from "react";
 import Logo from "../assets/logo/LOGO.png";
 import { NavLink } from "react-router-dom";
-import "./NavBar.css";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import "./NavBar.css";
 
 function NavBar() {
+  const { t, i18n } = useTranslation();
   const [sideNavOpen, setSideNavOpen] = useState(false);
   const [settingOpen, setSettingOpen] = useState(false);
 
@@ -14,6 +16,10 @@ function NavBar() {
 
   const toggleSetting = () => {
     setSettingOpen((prev) => !prev);
+  };
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
   };
 
   return (
@@ -26,19 +32,19 @@ function NavBar() {
         <div className="navlinks">
           <ul>
             <li>
-              <NavLink to="/">الرئيسية</NavLink>
+              <NavLink to="/">{t("navbar.home")}</NavLink>
             </li>
             <li>
-              <NavLink to="/about">من نحن</NavLink>
+              <NavLink to="/about">{t("navbar.about")}</NavLink>
             </li>
             <li>
-              <NavLink to="/products">المنتجات</NavLink>
+              <NavLink to="/products">{t("navbar.products")}</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">المشاريع</NavLink>
+              <NavLink to="/projects">{t("navbar.projects")}</NavLink>
             </li>
             <li>
-              <NavLink to="/contactus">تواصل معنا</NavLink>
+              <NavLink to="/contactus">{t("navbar.contactUs")}</NavLink>
             </li>
           </ul>
         </div>
@@ -52,10 +58,14 @@ function NavBar() {
           </button>
           {settingOpen && (
             <div className="setting-cont">
-              <label htmlFor="options">Select Language:</label>
-              <select id="options" name="options">
-                <option value="arabic">Arabic</option>
-                <option value="english">English</option>
+              <label htmlFor="options">{t("navbar.selectLanguage")}</label>
+              <select
+                id="options"
+                name="options"
+                onChange={(e) => changeLanguage(e.target.value)}
+              >
+                <option value="ar">العربية</option>
+                <option value="en">English</option>
               </select>
             </div>
           )}
@@ -69,39 +79,39 @@ function NavBar() {
         <ul>
           <li>
             <NavLink to="/" onClick={toggleSideNav}>
-              الرئيسية
+              {t("navbar.home")}
             </NavLink>
           </li>
           <li>
             <NavLink to="/about" onClick={toggleSideNav}>
-              من نحن
+              {t("navbar.about")}
             </NavLink>
           </li>
           <li>
             <NavLink to="/products" onClick={toggleSideNav}>
-              المنتجات
+              {t("navbar.products")}
             </NavLink>
           </li>
           <li>
             <NavLink to="/projects" onClick={toggleSideNav}>
-              المشاريع
+              {t("navbar.projects")}
             </NavLink>
           </li>
           <li>
             <NavLink to="/contactus" onClick={toggleSideNav}>
-              تواصل معنا 
+              {t("navbar.contactUs")}
             </NavLink>
           </li>
         </ul>
-
-        {/* Language Selection in SideNav */}
-        <div className="setting-cont-sidenav">
-          <label htmlFor="options">اختر اللغة:</label>
-          <select id="options" name="options">
-            <option value="arabic">العربية</option>
-            <option value="english">الانجليزية</option>
-          </select>
-        </div>
+        <label htmlFor="options">{t("navbar.selectLanguage")}</label>
+              <select
+                id="options"
+                name="options"
+                onChange={(e) => changeLanguage(e.target.value)}
+              >
+                <option value="ar">العربية</option>
+                <option value="en">English</option>
+              </select>
       </div>
     </div>
   );

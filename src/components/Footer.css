@@ -4,7 +4,7 @@
     height: auto; /* Adjusted for responsive height */
     padding-bottom: 20px;
     background-image: 
-        linear-gradient(135deg, rgba(166, 166, 166, 0.5), rgba(166, 166, 166, 0.8)), 
+        linear-gradient(135deg, rgba(166, 166, 166, 0.8), rgba(166, 166, 166, 0.8)), 
         url(../assets/footer.avif); /* Replace with your image URL */
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,6 +20,7 @@
 }
 .contact, .sociallinks, .pages {
     width: 100%;
+    
    
 }
 

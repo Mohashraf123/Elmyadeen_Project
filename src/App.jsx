@@ -6,6 +6,7 @@ import Projects from './pages/Projects'
 import Contactus from './pages/ContactUs'
 import Root from './pages/Root'
 import { AnimatePresence, motion } from 'framer-motion';
+import ProductDetails from './pages/ProductDetails'
 
 
 
@@ -15,7 +16,9 @@ const router=createBrowserRouter([
     {path:'about',element:<AboutUs/>},
     {path:'products',element:<ProductsPage/>},
     {path:'projects',element:<Projects/>},
-    {path:'contactus',element:<Contactus/>},    
+    {path:'contactus',element:<Contactus/>},  
+    {path:'products/:productId',element:<ProductDetails/>},    
+
   ])},
 ])
 

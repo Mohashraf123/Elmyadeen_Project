@@ -7,11 +7,12 @@ import Logo2 from "../assets/customers/cust2.jpeg";
 import Logo3 from "../assets/customers/cust3.jpeg";
 import Logo4 from "../assets/customers/cust4.jpeg";
 import Logo5 from "../assets/customers/cust5.jpeg";
-
 import './importers.css';
-
+import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
 export default function Importers() {
+  const { t } = useTranslation(); // Initialize useTranslation hook for translation
+
   const settings = {
     dots: true,          // Display navigation dots
     infinite: true,      // Infinite loop scrolling
@@ -42,22 +43,24 @@ export default function Importers() {
 
   return (
     <div className="importers">
-      <h1 className="title">الموردين</h1>
+      <h1 className="title">{t("importers.title")}</h1> {/* Translated title */}
       <div className="importers-slider">
         <Slider {...settings}>
           <div>
             <img src={Logo} alt="Customer 1" />
           </div>
           <div>
-            <img src={Logo2} alt="Cement 2" />
+            <img src={Logo2} alt="Customer 2" />
           </div>
           <div>
-            <img src={Logo3} alt="Customer 1" />
+            <img src={Logo3} alt="Customer 3" />
           </div>
           <div>
-            <img src={Logo4} alt="Cement 2" />
+            <img src={Logo4} alt="Customer 4" />
           </div>
-          
+          <div>
+            <img src={Logo5} alt="Customer 5" />
+          </div>
         </Slider>
       </div>
     </div>

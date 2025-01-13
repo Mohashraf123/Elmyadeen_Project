@@ -140,11 +140,11 @@
     left: -250px; /* Hidden initially */
     width: 250px;
     height: 100%;
-    background-color: #0d0d0d;
+    background-color:white;
     color: white;
     z-index: 1000;
     transition: 0.5s ease;
-    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 6px 1px black;
   }
   
   .sidenav.open {
@@ -162,8 +162,8 @@
   
   .sidenav ul li a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
+    color: black;
+    font-size: 24px;
     transition: color 0.3s ease;
   }
   
@@ -173,7 +173,7 @@
   
   .closebtn {
     font-size: 24px;
-    color: white;
+    color: #bf9004;
     background: none;
     border: none;
     margin: 10px;
@@ -184,9 +184,9 @@
 .setting-cont-sidenav {
     margin-top: 20px;
     padding: 10px;
-    background-color: #1a1a1a;
+    background-color:white;
     border-radius: 5px;
-    color: white;
+    color: black;
   }
   
   .setting-cont-sidenav select {

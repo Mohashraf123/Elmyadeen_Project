@@ -7,6 +7,7 @@ import About from '../components/About';
 import AboutProduc from '../components/aboutproduc';
 import AboutProjects from '../components/AboutProjects';
 import Importers from '../components/Importers';
+import Contact from '../components/Contact';
 
 export default function ContactUs() {
   useEffect(() => {
@@ -24,7 +25,7 @@ export default function ContactUs() {
     
     {/* AOS for scroll-based animations */}
     <div data-aos="fade-up">
-      <div>contact us</div>
+      <Contact/>
     </div>
     
    
