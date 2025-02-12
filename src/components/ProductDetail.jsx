@@ -28,12 +28,15 @@ function ProductDetail() {
                         {t("productDetail.type")} {/* Translated label */}
                     </h1>
                     <h2>{t(`products.${product.title}`)}</h2> {/* Translated product title */}
+                   
                 </div>
                 <div className="discrib">
                     <h1>
                         {t("productDetail.description")} {/* Translated label */}
                     </h1>
                     <p>{t(`descriptions.${product.description}`)}</p>  {/* Translated description */}
+
+                    
                 </div>
             </div>
         </div>

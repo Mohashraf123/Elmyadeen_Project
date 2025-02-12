@@ -13,7 +13,7 @@ const resources = {
         selectLanguage: "Select Language:",
      },
      header:{
-        title: "Al-Mayadin Company for Building Materials & Ready Mix Concrete",
+        title: "Al-Mayadeen Company for Building Materials & Ready Mix Concrete",
         description:
           "We are a leading company with a trusted brand in every sector we operate in. We strive to grow and expand regionally through a consistent and well-thought-out strategy to ensure success for our company and our partners.",
         contact: "Contact Us",
@@ -166,7 +166,7 @@ const resources = {
         selectLanguage: "اختر اللغة",
       },
       header: {
-        title: "شركة الميادين لمواد البناء والخرسانة الجاهزة",
+        title: "شركة الميادين المتميزة للتجارة العامة والمقاولات   ",
         description:
           "هى شركة رائدة ذات علامة تجارية موثوق بها في كل قطاع نعمل به. حيث نسعى إلى التقدم والانتشار إقليميا من خلال سياسة واستراتيجية ثابتة ومدروسة لتحقيق النجاح للشركة ولمن يعمل معها من الشركات الزميلة.",
         contact: "تواصل معنا",
@@ -244,7 +244,7 @@ const resources = {
         "whiteBlock": "الطابوق الأبيض",
         "blackBlock": "الطابوق الأسود",
         "precast": "بريكاست",
-        "gravel": "سلبوخ",
+        "gravel": "صلبوخ",
         "ceramicPorcelain": "سيراميك وبورسلين",
         "megaBoards": "ألواح ميجا",
         "eliSabb": "إيلى صعب",
@@ -259,7 +259,7 @@ const resources = {
         "whiteCement": "أسمنت أبيض",
         "regularCement": "أسمنت عادي",
         "mortarCement": "أسمنت مورتر",
-        "sand": "رمال",
+        "sand": "رمل مغربل -رمل مغسول",
         "steel": "الحديد الصلب",
         "wood": "الأخشاب",
         "readyMixConcrete": "خرسانة جاهزة",
@@ -267,7 +267,7 @@ const resources = {
         "whiteBlock": "طابوق أبيض",
         "blackBlock": "طابوق أسود",
         "precast": "بريكاست",
-        "gravel": "سلبوخ",
+        "gravel": "صلبوخ",
         "ceramicPorcelain": "سيراميك وبورسلين",
         "megaBoards": "ألواح ميجا",
         "eliSabb": "إيلى صعب",

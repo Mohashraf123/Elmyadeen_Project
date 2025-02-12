@@ -51,7 +51,7 @@ export default function AboutProjects() {
         </div>
       </div>
       <Link className="link" to="/projects" onClick={scrollToTop}>
-        {t("aboutProjects.viewMore")}
+        {t("aboutProduc.viewMore")}
       </Link>
 
       {showModal && (

@@ -7,6 +7,10 @@ import Logo2 from "../assets/customers/cust2.jpeg";
 import Logo3 from "../assets/customers/cust3.jpeg";
 import Logo4 from "../assets/customers/cust4.jpeg";
 import Logo5 from "../assets/customers/cust5.jpeg";
+import Logo6 from "../assets/customers/cust6.png";
+import Logo7 from "../assets/customers/cust7.png";
+
+
 import './importers.css';
 import { useTranslation } from 'react-i18next'; // Import useTranslation hook
 
@@ -60,6 +64,12 @@ export default function Importers() {
           </div>
           <div>
             <img src={Logo5} alt="Customer 5" />
+          </div>
+          <div>
+            <img src={Logo6} alt="Customer 6" />
+          </div>
+          <div>
+            <img src={Logo7} alt="Customer 7" />
           </div>
         </Slider>
       </div>
